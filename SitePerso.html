@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="SitePerso.css">
+	<title>Thompson Victor</title>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap')
+	</style>
+</head>
+<body>
+	<main>
+	<div id= accueil >
+	<p id='welcome'>Bienvenue sur mon site</p>
+	<h1 id="titre">
+		Thompson Victor
+	</h1>
+	<p id="etud">Etudiant BUT INFO 1ère année</p>
+	</div>
+	<nav id= 'menu'>
+		<ul>
+			<li><a class="Accueil" href="#accueil">Accueil</a></li>
+			<li><a class="CV" href="#CV">Mon CV</a></li>
+			<li><a class="PPP" href="#PPP">Mon Projet Personnel Professionnel</a></li>
+			<li><a class="interet" href="#interet">Mes centres d'interêts</a></li>
+			<li><a class="contact" href="#contact">Me contacter</a></li>
+  		</ul>
+	</nav>
+	
+	<div id= CV>
+		<h2>Mon CV</h2>
+		<h3>A propos de moi</h3>
+		<div id="moi">
+		<p>Je m'appelle Victor Thompson, j'ai 18 ans et je suis actuellement en 1ère année de BUT informatique.
+			<br>J'ai découvert le développement web avec l'HTML5 et le CSS3 pendant les projets en cours de Numérique et Sciences Informatiques, spécialité choisi au lycée. Cela a été une véritable passion de voir mon projet s'afficher au fur et à mesure que les lignes de codes s'ajoutent, n'hésitez pas à me contacter pour plus de renseignements</p>
+
+		<p>Mes loisirs sont le cinéma, la musique, les jeux vidéo indépendants, les sorties entre amis, et bien sûr l'informatique.</p>
+
+		<p>J'ai pour but de travailler dans la programmation de site internet ou d'applications en tant que développeur Front-End et pourquoi pas travailler dans une startup plus tard.</p>
+		</div>
+	</div>
+	<div id= PPP>
+		<h2>Mon Projet Personnel Professionnel</h2>
+	</div>
+
+	<div id= interet>
+		<h2>Mes centres d'interêts</h2>
+	</div>
+
+	<div id= contact>
+			<h2>Me contacter</h2>
+			<form name='Contact' method='POST' data-netlify-recaptcha='true'><input type='hidden' name='form-name' value='Contact' />
+                <input name="name" type="text" class="feedback-input" placeholder="Votre nom" required /><br>
+                <input name="email" type="text" class="feedback-input" placeholder="Votre email" required /><br>
+                <textarea name="text" class="feedback-input" placeholder="Votre commentaire"
+                    required></textarea><br>
+                <input type="hidden" name="contact"><br>
+                       
+                <button type="submit">Envoyer</button>
+	</div>
+
+	
+	</main>
+</body>
+</html>

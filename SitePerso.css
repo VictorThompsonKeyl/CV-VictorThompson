@@ -1,0 +1,182 @@
+body{
+	height: 100vh;
+	background-image:url(fond.png);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width:2000px;
+	min-width: 600px;
+
+	overflow-x: hidden;
+	perspective: 2px;
+}
+
+#etud{
+
+	text-align: center;
+	font-size: 30px;
+	color: white;
+	font-family: Source Sans Pro;
+	padding-bottom: 20vh;
+}
+#welcome{
+	padding-top: 10%;
+	text-align: center;
+	font-size: 40px;
+	font-family: Source Sans Pro;
+	color: white;
+
+	}
+#titre{
+	text-align: center;
+	font-size: 140px;
+	font-family: 'Shadows Into Light', cursive;
+	color: white;
+	margin: 0;
+}
+
+#accueil {
+	height: 80vh;
+	
+}
+nav{
+	position: -webkit-sticky;
+	position: sticky;
+	width: 100%;
+	font-family: 25px;
+    margin: 0 auto;
+    top: 0px;
+    background-image: url(fond.png);
+    background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+
+
+
+}
+nav ul{
+    list-style-type: none;
+}
+
+nav li{
+    float: left;
+    width: 20%;/*100% divisé par le nombre d'éléments de menu*/
+    text-align: center;/*Centre le texte dans les éléments de menu*/
+
+
+}
+nav ul::after{
+    content: "";
+    display: table;
+    clear: both;
+}	
+
+nav a{
+	
+	font-family: Source Sans Pro;
+	font-size: 25px;
+	color: white;
+	margin-right: 15px;
+	display: block; /*Toute la surface sera cliquable*/
+    text-decoration: none;
+    border-bottom: 2px solid transparent;/*Evite le décalage des éléments sous le menu à cause de la bordure en :hover*/
+    padding: 10px 0px;/*Agrandit le menu et espace la bordure du texte*/
+
+}
+nav a:hover{
+	font-size: 30px;
+	border-bottom: 2px solid white;
+	transition: 0.2s;
+}
+
+h2{
+	/*padding-top: 10%;*/
+	text-align: center;
+	font-size: 70px;
+	font-family: Source Sans Pro;
+	color: white;
+	font-weight: normal;
+	border-bottom: 2px solid white;
+	margin-right: 20%;
+	margin-left: 20%;
+}
+#CV {
+	height: 100vh;
+}
+#CV > h3{
+	text-align: center;
+	font-size: 50px;
+	font-family: Source Sans Pro;
+	color: #ffd152; /*linear-gradient(120deg, #f6d365 0%, #fda085 100%);*/
+	font-weight: normal;
+
+}
+#moi {
+	width: 50%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 25px;
+
+}
+#moi > p {
+	color: white;
+	display: block;
+	font-size: 16px;
+	padding-left: 30%;
+	line-height: 24px;
+	font-family: Source Sans Pro;
+	text-align: justify;
+}
+#PPP {
+	height: 100vh;
+
+}
+#interet {
+	height: 100vh;
+
+}
+#contact{
+	height: 100vh;
+
+}
+
+form {
+	text-align: center;
+    padding-left: 25%;
+    padding-right: 25%;
+
+}
+
+textarea, input
+{
+	font-family: Source Sans Pro;
+	width: 100%;
+	margin-top: 20px;
+	line-height: 1.5;
+	border-radius: 5px;
+	border: 3px solid #ffd152;
+	box-shadow: 1px 1px 1px #999;
+	background-color: transparent;
+	font-weight: 500;
+    font-size: 18px;
+    color: white;
+}
+ input::placeholder {
+    color: white;
+    opacity: 1;
+}
+input:placeholder-shown {
+    border: 1px solid #095484;
+}
+button {
+	width: 50%;
+	border-radius: 5px;
+	padding-top: 10px;
+    padding-bottom: 10px;
+    background-image: linear-gradient(120deg, #f6d365 0%, #fda085 100%);
+    border: transparent;
+    font-size: 15px;
+    font-family: Source Sans Pro;
+}
