@@ -241,10 +241,10 @@ h2{
 }
 
 .bar.learning::before{
-  width: calc(20% - 10px);
+  width: calc(50% - 10px);
 }
 .bar.basic::before{
-  width: calc(40% - 10px);
+  width: calc(60% - 10px);
 }
 .bar.intermediate::before{
   width: calc(60% - 10px);
