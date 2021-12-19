@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+
 body{
 	height: 100vh;
+	margin:0;
+	padding: 0;
 	background-image:url(fond.png);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -99,7 +103,7 @@ nav a:hover{
 h2{
 	/*padding-top: 10%;*/
 	text-align: center;
-	font-size: 70px;
+	font-size: 50px;
 	font-family: Source Sans Pro;
 	color: white;
 	font-weight: normal;
@@ -174,11 +178,12 @@ h2{
 	text-align: center;
 	border-left: 2px solid white;
 	width: 31%;
-	height: ;
+	
+
 
 }
 #photo> img {
-	width: 50%;
+	width: 65%;
 	border-radius: 15px;
 
 }
@@ -257,6 +262,59 @@ h2{
 	padding-top: 30px;
 	height: 100vh;
 
+
+}
+
+#conteneurPPP{
+	float: left;
+	width: 100%;
+	padding-top: 50px;
+	
+
+}
+
+#conteneurPPP >div{
+	width: 50%;
+	float: left;
+	text-align: center;
+
+	
+
+}
+#conteneurPPP #why>p{
+	
+	text-align: justify;
+	font-size: 16px;
+	margin-left: 10%;
+	margin-right: 15px;
+	
+
+
+}
+#passion{
+	margin-top: 50px;
+	background-color: rgba(202, 207, 210, 0.7);
+	line-height: 24px;
+  	border-radius: 30px;
+  	padding: 20px;
+  	margin-right: 20px;
+  	font-weight: bold;
+ 
+}
+#conteneurPPP #PP>p{
+	text-align: justify;
+	font-size: 16px;
+	margin-left: 15px;
+	margin-right: 10%;
+}
+#projet{
+	font-weight: bold;
+	background-color: rgba(202, 207, 210, 0.7);
+	line-height: 24px;
+  	border-radius: 30px;
+  	padding: 20px;
+  	margin-left: 20px;
+  	margin-bottom: 50px;
 }
 #interet {
 	padding-top: 30px;
@@ -286,7 +344,7 @@ h2{
   line-height: 0;
 }
 
-.box > img {
+.box  img {
   width: 100%;
   height: calc(100% - 10vh);
   object-fit: cover; 
@@ -294,7 +352,7 @@ h2{
   border-radius: 20px;
 }
 
-.box > span {
+.box  span {
   font-size: 3.8vh;
   display: block;
   text-align: center;
@@ -303,13 +361,14 @@ h2{
 }
 
 .box:hover { flex: 1 1 50%; }
-.box:hover > img {
+.box:hover  img {
   width: 100%;
   height: 100%;
 }
 #contact{
 	padding-top: 30px;
 	height: 100vh;
+	padding-bottom: 5%;
 
 }
 
@@ -317,7 +376,12 @@ form {
 	text-align: center;
     width: 60%;
     margin-left: auto;
+    padding: 2% 3%;
     margin-right: auto;
+    background-color: rgba(202, 207, 210, 0.7);
+  	border-radius: 30px;
+
+
 
 }
 
@@ -393,20 +457,81 @@ button {
   color: white;
 }
 
-
-.fa-google {
-  background: #dd4b39;
-  color: white;
-}
-
-
 .fa-instagram {
   background: #125688;
   color: white;
 }
 
-.fa-snapchat-ghost {
-  background: #fffc00;
+.fa-envelope{
+  background: #FF7043;
   color: white;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-phone{
+  background: green;
+  color: white;	
+}
+
+/*footer*/
+footer {
+  padding:40px 0;
+  background-color: rgba(202, 207, 210, 1);
+  color: black;
+}
+
+footer ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:18px;
+  line-height:1.6;
+  margin-bottom:0;
+ 
+
+}
+
+footer li {
+  padding:0 10px;
+   display:inline-block;
+}
+
+footer ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.6;
+}
+
+footer ul a:hover {
+  opacity:1;
+}
+
+footer .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+footer .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid black;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+  text-decoration: none;
+}
+
+footer .social > a:hover {
+  opacity:1;
+}
+
+footer .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:18px;
+  color: black;
+  margin-bottom:0;
 }
