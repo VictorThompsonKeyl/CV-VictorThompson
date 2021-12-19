@@ -6,9 +6,15 @@ body{
 	background-size: cover;
 	max-width:2000px;
 	min-width: 600px;
-
+	box-sizing: border-box;
 	overflow-x: hidden;
 	perspective: 2px;
+	font-family: Source Sans Pro;
+	color: white;
+
+}
+html{
+	scroll-behavior: smooth;
 }
 
 #etud{
@@ -43,13 +49,13 @@ nav{
 	position: -webkit-sticky;
 	position: sticky;
 	width: 100%;
-	font-family: 25px;
     margin: 0 auto;
     top: 0px;
     background-image: url(fond.png);
     background-attachment: fixed;
 	background-repeat: no-repeat;
 	background-size: cover;
+	z-index: 1000;
 
 
 
@@ -102,8 +108,13 @@ h2{
 	margin-left: 20%;
 }
 #CV {
+	padding-top: 30px;
 	height: 100vh;
 }
+
+
+
+
 #CV > h3{
 	text-align: center;
 	font-size: 50px;
@@ -112,40 +123,201 @@ h2{
 	font-weight: normal;
 
 }
+.conteneur{
+	width: 100%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	margin-top: 5vh;
+}
+.conteneur:before, .conteneur:after {
+    content:"";
+    display:table;
+    clear: both;
+}
+.conteneur>div {
+	width: 32%;
+	float: left;
+	height: 30vh;
+
+
+    
+}
 #moi {
-	width: 50%;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: 25px;
+	border-right: 2px solid white;
+	text-align: center;
+	max-height: 50vh;
 
 }
 #moi > p {
 	color: white;
-	display: block;
 	font-size: 16px;
-	padding-left: 30%;
-	line-height: 24px;
+	padding-left: 10%;
+	padding-right: 20px;
+	line-height: 20px;
 	font-family: Source Sans Pro;
 	text-align: justify;
+	
+
+
 }
+#moi a{
+	text-decoration: none;
+	color: black;
+	font-size: 18px;
+}
+
+#moi a:hover{
+	color: white;
+}
+#photo{
+	text-align: center;
+	border-left: 2px solid white;
+	width: 31%;
+	height: ;
+
+}
+#photo> img {
+	width: 50%;
+	border-radius: 15px;
+
+}
+/* Barre de compétances*/
+
+.container{
+  width: 100%;
+  text-align: center;
+  background-color: rgba(202, 207, 210, 0.7);
+  border-radius: 30px;
+  padding: 20px;
+
+  margin-left: 20px;
+  margin-right: 20px;
+
+ 
+ 
+}
+@keyframes load{
+  from {
+    width: 0%
+  }
+}
+
+.skillbar{
+	text-align: center;
+
+	
+}
+.bar{
+  text-align: left;
+  background-color: #EEE;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #FFF;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}
+.bar::before{
+  content:  attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 4s 0s;
+}
+
+.bar.front::before{
+  background-color: #ffcc33;
+}
+.bar.back::before{
+  background-color: #a6cfe3;
+}
+
+.bar.learning::before{
+  width: calc(20% - 10px);
+}
+.bar.basic::before{
+  width: calc(40% - 10px);
+}
+.bar.intermediate::before{
+  width: calc(60% - 10px);
+}
+.bar.advanced::before{
+  width: calc(80% - 10px);
+}
+.bar.expert::before{
+  width: calc(100% - 10px);
+}
+
+/* FIN Barre de compétances*/
+
 #PPP {
+	padding-top: 30px;
 	height: 100vh;
 
 }
 #interet {
+	padding-top: 30px;
 	height: 100vh;
 
 }
+
+
+.conteneurbox {
+  display: flex;
+  width: 80%;
+  padding: 2% 5%;
+  box-sizing: border-box;
+  height: 70vh;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  background-color: rgba(202, 207, 210, 0.7);
+  border-radius: 30px;
+}
+
+.box {
+  flex: 1;
+  overflow: hidden;
+  transition: .5s;
+  margin: 0 2%;
+  line-height: 0;
+}
+
+.box > img {
+  width: 100%;
+  height: calc(100% - 10vh);
+  object-fit: cover; 
+  transition: .5s;
+  border-radius: 20px;
+}
+
+.box > span {
+  font-size: 3.8vh;
+  display: block;
+  text-align: center;
+  height: 10vh;
+  line-height: 2.6;
+}
+
+.box:hover { flex: 1 1 50%; }
+.box:hover > img {
+  width: 100%;
+  height: 100%;
+}
 #contact{
+	padding-top: 30px;
 	height: 100vh;
 
 }
 
 form {
 	text-align: center;
-    padding-left: 25%;
-    padding-right: 25%;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
 
 }
 
@@ -165,13 +337,17 @@ textarea, input
 }
  input::placeholder {
     color: white;
-    opacity: 1;
+    opacity: 0.7;
 }
 input:placeholder-shown {
-    border: 1px solid #095484;
+    border: 3px solid #ffd152;
+}
+textarea::placeholder{
+	color: white;
+    opacity: 0.7;
 }
 button {
-	width: 50%;
+	width: 40%;
 	border-radius: 5px;
 	padding-top: 10px;
     padding-bottom: 10px;
@@ -179,4 +355,58 @@ button {
     border: transparent;
     font-size: 15px;
     font-family: Source Sans Pro;
+}
+
+/* Réseaux sociaux*/
+#RS {
+	padding-left: 40%;
+	display: block;
+}
+#RS a{
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+} 
+#RS a:hover{
+	text-decoration: none;
+	font-size: +4;
+	color: rgba(165, 165, 165, 1.0);
+
+} 
+
+.fa {
+	text-align: center;
+	margin: 5px ;
+	padding: 20px; 
+	width: 20px;
+	font-size: 30px;
+	text-align: center;
+	margin-right: 50px;
+	text-decoration: none;
+	border-radius: 50%;
+	border: 1px solid grey;
+}
+
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-snapchat-ghost {
+  background: #fffc00;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
